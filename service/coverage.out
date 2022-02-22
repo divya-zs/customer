@@ -1,0 +1,18 @@
+mode: set
+customer/service/service.go:15.38,17.2 1 1
+customer/service/service.go:19.69,21.16 2 1
+customer/service/service.go:24.2,24.17 1 1
+customer/service/service.go:21.16,23.3 1 1
+customer/service/service.go:27.79,29.16 2 1
+customer/service/service.go:32.2,32.17 1 1
+customer/service/service.go:29.16,31.3 1 1
+customer/service/service.go:35.96,37.16 2 1
+customer/service/service.go:40.2,40.17 1 1
+customer/service/service.go:37.16,39.3 1 1
+customer/service/service.go:43.96,45.16 2 1
+customer/service/service.go:48.2,48.17 1 1
+customer/service/service.go:45.16,47.3 1 1
+customer/service/service.go:51.59,53.16 2 1
+customer/service/service.go:56.2,56.12 1 1
+customer/service/service.go:53.16,55.3 1 1
+customer/service/service.go:59.103,61.2 1 1
