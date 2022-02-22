@@ -2,24 +2,16 @@ package main
 
 import (
 	"customer/handler"
+	"customer/middleware"
 	"customer/service"
 	"customer/store"
 	"developer.zopsmart.com/go/gofr/pkg/gofr"
-	"fmt"
-	"github-lvs.corpzone.internalzone.com/mcafee/cnsr-gofr-csp-auth/validator"
 )
 
 func main() {
 	app := gofr.New()
-	opts := validator.Options{
-		Keys: map[string]string{
-			app.Config.Get("CSP_APP_KEY_CATALOG"): app.Config.Get("CSP_SHARED_KEY_CATALOG"),
-		},
-	}
-	fmt.Println(opts)
 
-	app.Server.UseMiddleware(validator.CSPAuth(app.Logger, opts))
-
+	app.Server.UseMiddleware(middleware.OauthMiddleware)
 	store := store.New()
 	service := service.New(store)
 	handler := handler.New(service)
